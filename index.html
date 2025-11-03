@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fareeda Jewellery - Gold Rates</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: url('https://josephvargheseollukkaran.github.io/fareeda/image/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #000;
+      text-align: center;
+    }
+
+    .container1 {
+      display: flex;
+      justify-content: space-between; /* Puts tables on left and right */
+      padding: 20px;
+    }
+
+    .gold table {
+      border: 4 solid black;
+      border-collapse: collapse;
+      width: 45%; /* Adjust width as needed */
+    }
+
+    .gold th, .gold td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    
+    .container {
+      background-color: rgba(255, 255, 255, 0.85);
+      width: 80%;
+      margin: 30px auto; 
+      <!-- margin-top: 20px; /* Add space at the top */ -->
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin-top: 100px; /* Add space at the top */
+      text-align: center; /* Center horizontally */
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .logo img {
+      width: 200px;
+    }
+
+    .logo h1 {
+      font-size: 36px;
+      color: red;
+      margin: 5px 0;
+    }
+    .rat h1 {
+      font-size: 36px;
+      color: red;
+      margin: 5px 0;
+    }
+    .logo h2 {
+      font-size: 20px;
+      color: red;
+      margin: 5;
+    }
+
+    .date-label {
+      font-size: 22px;
+      font-weight: bold;
+      background-color: #000;
+      color: #fff;
+      display: inline-block;
+      padding: 10px 30px;
+      margin: 5px 0;
+    }
+
+    .gold-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+    }
+
+    .gold-table th, .gold-table td {
+      border: 4px solid black; /* Makes the table visible */
+      border-collapse: collapse; /* Optional: cleaner borders */
+      text-align: center;
+      padding: 5px;
+      font-size: 45px;
+    }
+
+    
+    
+
+    .ltr {
+      direction: ltr;
+      animation: blinker 6s linear infinite;
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    }
+
+    .rtl {
+      direction: rtl;
+      font-family: 'Arial', sans-serif;
+    }
+   
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  </style>
+</head>
+<body>
+
+ <!-- <div class="container"> -->
+    <div class="logo">
+      <img src="https://josephvargheseollukkaran.github.io/fareeda/image/logo.png" alt="Fareeda Logo"> <!-- Replace with actual logo -->
+      <h2>JEWELLERY</h2>
+    </div>
+
+    <div class="date-label">DATE: <span id="todayDate"></span></div>
+  <div class="rat">
+    <h1>TODAY'S GOLD RATE   سعر الذهب </h1>
+  </div>
+    <div class="container1">
+    <!-- Left Table -->
+    <table class="gold-table">
+      <tr>
+        <td class="ltr">18CT</td>
+        <td class="ltr">QR 423.5</td>
+      </tr>
+      <tr>
+        <td class="ltr">22CT</td>
+        <td class="ltr">QR 447</td>
+      </tr>
+      <tr>
+        <td class="ltr">24CT</td>
+        <td class="ltr">QR 366</td>
+      </tr>
+    </table>
+
+    <!-- Right Table -->
+    <table class="gold-table">
+      <tr>
+        <td class="ltr">٤۲۳.٥ QR</td>
+        <td class="ltr">عيار ٢٤</td>
+      </tr>
+      <tr>
+        <td class="ltr">٤٤۷ QR</td>
+        <td class="ltr">عیار ۲۲</td>
+      </tr>
+      <tr>
+        <td class="ltr">۳٦٦ QR</td>
+        <td class="ltr">عیار ۱۸</td>
+      </tr>
+    </table>
+  </div>
+ <!-- </div> -->
+
+  <script>
+    // Auto-fill today's date
+    const dateElement = document.getElementById("todayDate");
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.textContent = today.toLocaleDateString('en-US', options);
+  </script>
+
+</body>
+</html>

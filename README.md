@@ -1,2 +1,1 @@
-# rate
-rate
+# josephvargheseollukkaran.github.io
